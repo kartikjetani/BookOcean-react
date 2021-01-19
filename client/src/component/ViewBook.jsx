@@ -12,7 +12,7 @@ function ViewBook() {
 
     useEffect(() => {
 
-        fetch('http://localhost:5000/searchbymd5/' + md5)
+        fetch('http://3.20.8.168:5000/searchbymd5/' + md5)
             .then(res => res.json())
             .then(data => { setDetails(data[0]) })
 

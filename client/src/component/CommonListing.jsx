@@ -11,7 +11,7 @@ const useFetch = (query) => {
     useEffect(async() => {
         setLoading(true)
         
-        await fetch('http://localhost:5000/books/' + query)
+        await fetch('http://3.20.8.168:5000/books/' + query)
             .then(res => res.json())
             .then(data => {
                 if (Object.keys(data).length !== 0) {
