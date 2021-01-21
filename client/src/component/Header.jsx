@@ -13,10 +13,10 @@ function Header() {
         update_query(search)
         update_options(selection)
 
-        // ReactGa.event({
-        //     category: 'Button',
-        //     action: 'User Searched Something...'
-        // })
+        ReactGa.event({
+            category: 'Button',
+            action: 'User Searched Something...'
+        })
     }
     const changeEvent = (inp) => {
         setSearch(inp.target.value);

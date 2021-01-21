@@ -12,11 +12,11 @@ import Categories from './component/Categories';
 
 function App() {
 
-  // useEffect(() => {
+  useEffect(() => {
    
-  //   ReactGa.initialize("UA-187661708-1")
-  //  ReactGa.pageview(window.location.pathname + window.location.search);
-  // }, [])
+    ReactGa.initialize("UA-187661708-1")
+   ReactGa.pageview(window.location.pathname + window.location.search);
+  }, [])
 
 
   return (
