@@ -1,5 +1,6 @@
 {
   "name": "book-ocean",
+  "homepage": "http://bookocean.ml",
   "version": "1.0.0",
   "description": "digital library",
   "main": "index.js",

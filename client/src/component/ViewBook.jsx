@@ -3,7 +3,7 @@ import download_svg from '../img/download.svg';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import {BeatLoader} from 'react-spinners';
-
+import ReactGa from 'react-ga';
 
 function ViewBook() {
     const [details, setDetails] = useState();
@@ -18,6 +18,19 @@ function ViewBook() {
 
     }, [])
 
+    function download_1(){
+        ReactGa.event({
+            category:"Button",
+            action:"Download-1 Button Clicked"
+        })
+    }
+
+    function download_2(){
+        ReactGa.event({
+            category:"Button",
+            action:"Download-2 Button Clicked"
+        })
+    }
 
 
     if (details === undefined) {
@@ -30,7 +43,7 @@ function ViewBook() {
                 <div className="all_book_detail_cont" id="item1">
                     <div className="all_book_detail_cont_title">
                         <h2>
-                            Book details
+                            Book Details
                     </h2>
                     </div>
                     <div className="all_book_detail_cont_2">
@@ -39,7 +52,7 @@ function ViewBook() {
                         </div>
 
                         {/* <!--details of column 1 start--> */}
-
+                        <div id="outer_column">
                         <div className="all_book_details">
                             <div className="all_detail_details">
                                 <h4 className="all_book_details_title">
@@ -59,7 +72,7 @@ function ViewBook() {
                             </div>
                             <div className="all_detail_details">
                                 <h4 className="all_book_details_title">
-                                    series :
+                                    Series :
                             </h4>
                                 <h4 className="all_book_details_name">
                                     {details.series}
@@ -67,7 +80,7 @@ function ViewBook() {
                             </div>
                             <div className="all_detail_details">
                                 <h4 className="all_book_details_title">
-                                    edition :
+                                    Edition :
                             </h4>
                                 <h4 className="all_book_details_name">
                                     {details.edition}
@@ -75,7 +88,7 @@ function ViewBook() {
                             </div>
                             <div className="all_detail_details">
                                 <h4 className="all_book_details_title">
-                                    publisher :
+                                    Publisher :
                             </h4>
                                 <h4 className="all_book_details_name">
                                     {details.publisher}
@@ -118,10 +131,10 @@ function ViewBook() {
                         {/* <!--details of column 1 end-->
                     <!--details of column 2 start--> */}
 
-                        <div className="all_book_details">
+                        <div id="column-2" className="all_book_details">
                             <div className="all_detail_details">
                                 <h4 className="all_book_details_title">
-                                    id :
+                                    Id :
                             </h4>
                                 <h4 className="all_book_details_name">
                                     {details.id}
@@ -137,20 +150,13 @@ function ViewBook() {
                             </div>
                             <div className="all_detail_details">
                                 <h4 className="all_book_details_title">
-                                    isbn :
+                                    ISBN :
                             </h4>
                                 <h4 className="all_book_details_name">
                                     {details.isbn}
                                 </h4>
                             </div>
-                            <div className="all_detail_details">
-                                <h4 className="all_book_details_title">
-                                    md5 :
-                            </h4>
-                                <h4 className="all_book_details_name">
-                                    {details.md5}
-                                </h4>
-                            </div>
+                           
                             <div className="all_detail_details">
                                 <h4 className="all_book_details_title">
                                     Time added :
@@ -171,18 +177,18 @@ function ViewBook() {
                             <div className="all_detail_details">
                                 {/* <!--download button is here--> */}
                                 <a href={"http://111.90.145.72/get.php?md5=" + details.md5 + "&mirr=1"}>
-                                    <button>
+                                    <button id="download-1" onClick={download_1}>
 
-                                        Downlod
+                                        Download
                                 <img src={download_svg} alt="" />
                                     </button>
                                 </a>
                             </div>
-                            <div className="all_detail_details">
+                            <div  className="all_detail_details">
                                 {/* <!--download button is here--> */}
-                                <a href={"http://library.lol/main/" + details.md5} target="_blank">
-                                    <button>
-                                        Downlod
+                                <a  href={"http://library.lol/main/" + details.md5} target="_blank">
+                                    <button id="download-2" onClick={download_2}>
+                                        Download
                                 <img src={download_svg} alt="" />
                                     </button>
                                 </a>
@@ -190,7 +196,7 @@ function ViewBook() {
                         </div>
 
                         {/* <!--details of column 2 end--> */}
-
+                        </div>
                     </div>
                 </div>
             </section>

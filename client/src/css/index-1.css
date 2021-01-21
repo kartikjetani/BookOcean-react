@@ -1,51 +1,16 @@
-#section1 a{
-    color: black;
-}
-.loader{
-    height:150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     /* border: 2px solid red; */
- }
-
- 
- .pagination{
-     display: flex;
-     height: 100px;
-     justify-content: center;
-     align-items: center;
- }
- .page-item{
-     text-decoration: none;
-     color: #0F65CA;
-     list-style-type: none;
-     padding: 5px;
-     cursor: pointer;
-     /* border: 2px solid red; */
- }
- .page-link{
-     border:2px solid rgb(49, 27, 243);
-     padding: 10px;
-     background-color: white;
-     border-radius: 100px;
-     font-weight: bold;
- }
-
-.page-link:active{
-    background-color: #0F65CA;
-    color: white;
-}
-
 *{
     margin: 0;
     padding: 0;
     font-family: googlefont;
     outline: none;
     text-decoration: none;
-    /* color: black; */
     /* font-family: 'Roboto', sans-serif; */
 }
+
+
+
+
+
 body{
     background: rgb(216 236 250 / 50%);
 }
@@ -102,7 +67,7 @@ body{
     border-radius: 50px;
     color: black;
 }
-#right ul li a:hover ,#right ul li a.active{
+#right ul li a:hover{
     background-color: white;
 }
 /* header content */
@@ -182,33 +147,8 @@ body{
 #search:hover{
     border: 1px solid #0F65CA;
 }
-#div_search_option{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-}
-#div_search_option div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#div_search_option h4{
-    font-weight: 100;
-    font-size: 1.3rem;
-}
-.search_option{
-    font-family: googlefont;
-    font-size: 15px;
-    color: white;
-    background-color:  #0F65CA;
-    border: none;
-    outline: none;
-    border-radius: 12px;
-    padding: 5px 10px;
-    margin-left: 5px;
-}
+
+
 
 /* section 1 css start*/
 
@@ -246,6 +186,11 @@ body{
     text-align: center;
     font-size: 20px;
     margin: 10px 0px 0px 0px;
+}
+
+.books1 a{
+    text-decoration: none;
+    color: black;
 }
 #book1{
     margin-right: 10px;
@@ -351,7 +296,6 @@ body{
     padding: 10px 18px;
     border: none;
     cursor: pointer;
-    outline: none;
 }
 .all_details button:hover{
     box-shadow: 0px 3px 5px 1px rgba(15, 102, 202, 0.849);
@@ -417,6 +361,7 @@ body{
     text-decoration: underline; 
 }
 /* search result page css end */
+
 /* book details page css start */
 #all_book_detail{
     display: flex;
@@ -441,14 +386,14 @@ body{
     text-decoration: underline;
     font-size: 2.8rem;
 }
-#outer_column{
-    display: flex;
-}
 .all_book_details{
     display: flex;
     flex-direction: column;
     margin: 20px 6px;
-    width: 380px;   
+    width: 380px;    
+    word-break: break-word;
+    border: 2px solid red;
+    height:fit-content;
 }
 .all_detail_details{
     display: flex;
@@ -494,7 +439,6 @@ body{
     display: flex;
 }
 .all_book_detail_book_img{
-    display: inline-block;
     margin: 25px 25px;
     height: 420px;
     width: 250px;
@@ -505,67 +449,129 @@ body{
 }
 
 /* book details page end */
-/* categories page css start */
-#categories h3{
-    text-align: center;
-    font-size: 40px;
-    margin: 30px;
-    text-decoration: underline;
-}
-#categories-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* width: 1050px; */
-    margin: 50px auto;
-}
-.category{
-    font-family: googlefont;
-    font-size: 20px;
-    background-color:  white;
-    border: 1px solid #0F65CA;
-    outline: none;
-    border-radius: 12px;
-    padding: 5px 10px;
-    margin-left: 5px;
-    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
-    width: 500px;
-    margin: 10px 10px;
-}
-.category:hover{
-    cursor: pointer;
-    /* color: white; */
-    /* background-color: #0F65CA; */
-    box-shadow: 0px 3px 5px 1px rgba(15, 102, 202, 0.849);
-    transition-duration: 0.7s;
 
-}
-
-/* categories page css end */
 @media only screen and (min-width: 769px) and (max-width: 1140px) {
-    #outer_column{
-        flex-direction: column;
-    }
     #column-2{
-        margin-top: 0px;
+        position: relative;
+        left: 150px;
+        margin: -28px 20px 15px 20px;
+        border: 2px solid black;
     }
-    #column-1{
-        margin-bottom: 0px;
-    }
-        
-    /* #download-1{
+    #download-1{
         position: absolute;
-        bottom: -38px;
-        right: 745px;
+        top: 50px;
+        right: 510px;
     }
     #download-2{
         position: absolute;
-        bottom: -90px;
-        right: 745px;
-    }  */
-    .category{
-        width: 360px;
+        top: 105px;
+        right: 510px;
     }
+    }
+
+
+/* tab css */
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+    #nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin: 38px;/ */
+    }
+    #left h1 a{
+        font-size: 33px;
+    }
+    #right{
+        position: static;
+        margin: 10px 0px;     
+    }
+    #right ul{
+        
+        margin-top: 15px;     
+    }
+    #title h1{
+        font-size: 36px;
+    }
+    #search-txt{  
+        line-height: 50px;
+        width: 340px;
+        margin-left: 15px;
+    }
+    #search button{
+        padding: 8px 20px;
+    }
+    #search button h4{
+        display: none;
+    }
+    #search-icon{
+        display: none;
+    }
+    .search-button-img{
+        
+        display: flex;
+        filter: invert(100%);
+    }
+    .books1{
+       padding: 30px;
+        width: 100px;
+    
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+    }
+    .books1 p{
+        display: none;
+    }
+    .section1 img{
+        height: 65px;
+    }
+    .section1 h3{
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    #section2{
+        margin: 0px 15px;
+    }
+    #section2 h3{
+        font-size: 35px;
+        margin: 30px 0px;
+    }
+    .all_details button img{
+        height: 20px;
+        width: 20px;
+        margin-left: 5px;
+    }
+    .all_details button{
+        font-size: 16px;    
+        padding: 8px 9px;
+    }
+    .book_img img{
+        height: 240px;
+        width: 160px;
+    }
+    #footer_nm h2 {
+        margin: 35px;
+    }
+    #footer_list ul{
+        flex-direction: column;
+    }
+    #footer_list ul li{
+        margin-bottom: 10px;
+    }
+    .footer_list1{
+        display: flex;
+        justify-content: center;
+    }
+    #footer_list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #column-2{
+        margin-top: -20px;
+
+    }        
 }
 @media only screen and (min-width: 740px) and (max-width: 768px) 
 {
@@ -574,124 +580,10 @@ body{
     width: 410px;
 }
 }
-
-@media only screen and (min-width: 480px) and (max-width: 768px) 
-{
-    #nav{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* margin: 38px; */
-}
-#left h1 a{
-    font-size: 33px;
-}
-#right{
-    position: static;
-    margin: 10px 0px;     
-}
-#right ul{    
-    margin-top: 15px;     
-}
-#title h1{
-    font-size: 36px;
-}
-#search-txt{  
-    line-height: 50px;
-    width: 340px;
-    margin-left: 15px;
-}
-#search button{
-    padding: 8px 20px;
-}
-#search button h4{
-    display: none;
-}
-#search-icon{
-    display: none;
-}
-.search-button-img{    
-    display: flex;
-    filter: invert(100%);
-}
-.books1{
-    padding: 30px;
-    width: 100px;
-}
-.section1{
-    display: flex;
-    flex-direction: column;
-}
-.books1 p{
-    display: none;
-}
-.section1 img{
-    height: 65px;
-}
-.section1 h3{
-    margin-top: 10px;
-    font-size: 25px;
-}
-#section2{
-    margin: 0px 15px;
-}
-#section2 h3{
-    font-size: 35px;
-    margin: 30px 0px;
-}
-.all_details button img{
-    height: 20px;
-    width: 20px;
-    margin-left: 5px;
-}
-.all_details button{
-    font-size: 16px;    
-    padding: 8px 9px;
-}
-.book_img img{
-    height: 240px;
-    width: 160px;
-}
-#footer_nm h2 {
-    margin: 35px;
-}
-#footer_list ul{
-    flex-direction: column;
-}
-#footer_list ul li{
-    margin-bottom: 10px;
-}
-.footer_list1{
-    display: flex;
-    justify-content: center;
-}
-#footer_list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#column-2{
-    margin-top: -20px;
-}
-/* categories page css start */
-#categories h3{
-    font-size: 35px;
-    margin: 15px;
-}
-#categories-container{
-    margin-top: 25px;
-}
-.category{
-    width: 440px;
-}
-/* categories page css end */
-
-
-
-}
+/* phone css */
 @media only screen and (min-width: 330px) and (max-width: 480px) {
     #main{
-        height: 330px;
+        height: 315px;
     }
     #nav{
         display: flex;
@@ -736,15 +628,6 @@ body{
         width: 16px;
         display: flex;
         filter: invert(100%);
-    }
-    #div_search_option{
-        margin-top: 12px;
-    }
-    #div_search_option h4{
-        font-size: 15px;
-    }
-    .search_option{
-        padding: 3px 5px;
     }
     .books1{
        padding: 20px;
@@ -822,17 +705,4 @@ body{
     #column-2{
         margin-top: -20px;
     }
-
-    /* categories page css start */
-#categories h3{
-    font-size: 25px;
-    margin: 0px;
-}
-#categories-container{
-    margin-top: 15px;
-}
-.category{
-    width: 310px;
-}
-/* categories page css end */
 }

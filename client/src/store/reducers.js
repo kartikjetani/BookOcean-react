@@ -1,13 +1,20 @@
-export function reducer(state,{type,payload}) {
-    switch (type) {
-      case "UPDATE_NAME":
-        return {name:payload}
+import { combineReducers } from 'redux';
 
-      case "UPDATE_BOOKDATA":
-          return {bookdata:payload}
+function queryReducer(state={},{type,payload}) {
+    if(type==="UPDATE_NAME")
+        return payload
 
-      default:
-        return {name:undefined}
+    return state
   }
+
+function optionReducer(state={},{type,payload}){
+    if(type==="UPDATE_OPTIONS")
+      return payload
+    return state
 }
+
+export const AllReducers= combineReducers({query:queryReducer,option:optionReducer})
+
+
+
 

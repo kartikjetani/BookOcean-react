@@ -2,9 +2,15 @@ import React from 'react'
 import books_icon from '../img/book-light.svg'
 import popularData from '../popularBooks.json'
 import { Link } from 'react-router-dom';
+import ReactGa from 'react-ga';
 
 function BookBox(props) {
-    
+    function viewClickevent(){
+        ReactGa.event({
+            category:"Button",
+            action:"View Book Button Clicked"
+        })
+    }
 
     return (
         <>
@@ -72,8 +78,7 @@ function BookBox(props) {
                     </div>
                     <div className="all_details">
                         <Link to={"/view/"+props.dataObj.md5}>
-                            <button >
-                                
+                            <button onClick={viewClickevent}>
                                 View Book
                             <img src={books_icon} alt="" />
                             </button>

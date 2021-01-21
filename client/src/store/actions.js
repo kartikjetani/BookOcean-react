@@ -5,6 +5,6 @@ store.dispatch({type:"UPDATE_NAME",payload:query})
 }
 
 
-export const update_bookdata = (obj) =>{
-    store.dispatch({type:"UPDATE_BOOKDATA",payload:obj})
+export const update_options = (option) =>{
+    store.dispatch({type:"UPDATE_OPTIONS",payload:option}) 
 }
