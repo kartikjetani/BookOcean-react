@@ -3,12 +3,24 @@ import { Link } from 'react-router-dom';
 import search_svg from '../img/searc.svg'
 import { update_options, update_query } from '../store/actions';
 import ReactGa from 'react-ga';
+import { slide as Menu } from 'react-burger-menu'
 
 function Header() {
 
     const [search, setSearch] = useState();
-    const [selection,setSelection]=useState("auto");
+    const [selection,setSelection]=useState("title");
 
+    /* Set the width of the sidebar to 250px (show it) */
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+    }
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+    }    
+      
+    
     const clickEvent = () => {
         update_query(search)
         update_options(selection)
@@ -28,6 +40,13 @@ function Header() {
 
     return (
         <>
+        
+           {/* <Menu>
+                         <a id="home" className="menu-item" href="/">Home</a>
+                         <a id="about" className="menu-item" href="/about">About</a>
+                         <a id="contact" className="menu-item" href="/contact">Contact</a>
+                         {/* <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a> 
+            </Menu> */}
             <header id="header">
                 <nav id="nav">
                     <div id="left">
@@ -36,10 +55,20 @@ function Header() {
 
                         </h1>
                     </div>
+                    <div id="burger">
+                <div id="mySidepanel" className="sidepanel">
+                    <a  className="closebtn" onClick={closeNav}>&times;</a>
+                    <a><Link onClick={closeNav} to="/">Home</Link></a>
+                    <a ><Link onClick={closeNav} to="/categories">Categories</Link></a>
+                    <a id="mail" href="mailto:contact.bookocean@gmail.com">Contact</a>
+                </div>
+
+                <button className="openbtn" onClick={openNav}>&#9776;</button>
+            </div>
                     <div id="right">
                         <ul>
-                            <li className="option1"><a href="/">Home</a></li>
-                            <li className="option2"><a href="/categories">Categories</a></li>
+                            <li className="option1"><Link to="/" >Home</Link></li>
+                            <li className="option2"><Link to="/categories" >Categories</Link></li>
                             <li className="option3"><a href="mailto:contact.bookocean@gmail.com">Contact</a></li>
                         </ul>
                     </div>
@@ -79,24 +108,13 @@ function Header() {
                                     Search By 
                         </h4>
                                 <select value={selection} onChange={selectionChange} className="search_option" id="search_by">
-                                <option value="auto">Auto</option>
+                                
                                     <option value="title" >Title</option>
                                     <option value="author">Author</option>
                                     <option value="publisher">Publisher</option>
                                     {/*  */}
                                 </select>
-                            </div> 
-                           {/*   <div>
-                                <h4>
-                                    Sort By
-                                </h4>
-                                <select className="search_option" id="sort_by">
-                                    <option value="Title" selected>Title</option>
-                                    <option value="Author">Author</option>
-                                    <option value="Publisher">Publisher</option>
-                                    <option value="ISBN">ISBN</option>
-                                </select>
-                            </div> */}
+                            </div>   
                         </div>
                     </form>
                 </section>

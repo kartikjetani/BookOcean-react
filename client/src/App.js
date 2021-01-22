@@ -1,5 +1,6 @@
+import { useEffect } from 'react';
 import { Provider } from 'react-redux';
-import { Route, Switch } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import CommonListing from './component/CommonListing';
 import Explore from './component/Explore';
 import Footer from './component/Footer';

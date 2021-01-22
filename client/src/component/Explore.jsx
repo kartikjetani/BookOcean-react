@@ -1,23 +1,24 @@
 import React from 'react'
 import collection_svg from "../img/collections-1.svg";
 import book_svg from "../img/books-1.svg";
+import { Link } from 'react-router-dom';
 
 function Explore() {
     return (
         <section id="section1">
             <div id="book1" className="books1">
-                <a href="/">
+               <a href="/comingsoon.html">
                     <div className="section1">
                         <img src={book_svg} alt="" />
                         <h3>
-                            Books
+                            Educational
                         </h3>
                     </div>
-                    <p> Select book by choice</p>
-                </a>
+                    <p> Select book by Subject</p>
+                    </a>
             </div>
             <div id="book2" className="books1">
-                <a href="/comingsoon.html">
+               <Link to="/categories">
                     <div className="section1">
                         <img src={collection_svg} alt="" />
                         <h3>
@@ -25,7 +26,7 @@ function Explore() {
                         </h3>
                     </div>
                     <p> Select books by Categories </p>
-                </a>
+                    </Link>
             </div>
         </section>
     )

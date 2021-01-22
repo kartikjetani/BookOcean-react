@@ -10,7 +10,7 @@ const useFetch = (query,option) => {
 
     useEffect(async() => {
         setLoading(true)
-        await fetch("http://localhost:5000/"+option+"/" + query)
+        await fetch("http://3.20.8.168:5000/"+option+"/" + query)
             .then(res => res.json())
             .then(data => {
                 if (Object.keys(data).length !== 0) {
@@ -44,7 +44,9 @@ function CommonListing(props) {
         if (loading) {
             return <div className="loader"><BeatLoader color="#0F65CA" loading size="50px" /></div>
         } else if (data) {
-            return `${data.length} Results for ${props.query && props.query.substring(0, 10)}...`
+          return (props.query.substring(0,7)==="topicid")?
+             `${data.length} Results for category`:
+             `${data.length} Results for ${props.query && props.query.substring(0, 10)}...`
         } else {
             return "No result found"
         }
