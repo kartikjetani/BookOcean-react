@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import search_svg from '../img/searc.svg'
 import { update_options, update_query } from '../store/actions';
 import ReactGa from 'react-ga';
-import { slide as Menu } from 'react-burger-menu'
 
 function Header() {
 
@@ -22,7 +21,7 @@ function Header() {
       
     
     const clickEvent = () => {
-        update_query(search)
+        update_query(encodeURIComponent(search))
         update_options(selection)
 
         ReactGa.event({
@@ -41,12 +40,6 @@ function Header() {
     return (
         <>
         
-           {/* <Menu>
-                         <a id="home" className="menu-item" href="/">Home</a>
-                         <a id="about" className="menu-item" href="/about">About</a>
-                         <a id="contact" className="menu-item" href="/contact">Contact</a>
-                         {/* <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a> 
-            </Menu> */}
             <header id="header">
                 <nav id="nav">
                     <div id="left">
@@ -60,6 +53,8 @@ function Header() {
                     <a  className="closebtn" onClick={closeNav}>&times;</a>
                     <a><Link onClick={closeNav} to="/">Home</Link></a>
                     <a ><Link onClick={closeNav} to="/categories">Categories</Link></a>
+                    <a ><Link onClick={closeNav} to="/upload">Upload Book</Link></a>
+                    <a ><Link onClick={closeNav} to="/request">Request Book</Link></a>
                     <a id="mail" href="mailto:contact.bookocean@gmail.com">Contact</a>
                 </div>
 
@@ -69,6 +64,8 @@ function Header() {
                         <ul>
                             <li className="option1"><Link to="/" >Home</Link></li>
                             <li className="option2"><Link to="/categories" >Categories</Link></li>
+                            <li className="option2"><Link to="/upload" >Upload Book</Link></li>
+                            <li className="option2"><Link to="/request" >Request Book</Link></li>
                             <li className="option3"><a href="mailto:contact.bookocean@gmail.com">Contact</a></li>
                         </ul>
                     </div>
@@ -77,7 +74,7 @@ function Header() {
 
                     <div id="title">
                         <h1 className="title">
-                            World's biggest online free digital Library
+                            India's biggest online free digital Library
                             </h1>
                         {/* <h3 className="tagline">One Stop Destination for Digital Readers</h3> */}
                     </div>
@@ -112,7 +109,8 @@ function Header() {
                                     <option value="title" >Title</option>
                                     <option value="author">Author</option>
                                     <option value="publisher">Publisher</option>
-                                    {/*  */}
+                                    <option value="searchbyisbn">ISBN</option>
+                                   
                                 </select>
                             </div>   
                         </div>

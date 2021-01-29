@@ -3,6 +3,7 @@ import books_icon from '../img/book-light.svg'
 import popularData from '../popularBooks.json'
 import { Link } from 'react-router-dom';
 import ReactGa from 'react-ga';
+import default_img from "../img/poster.png";
 
 function BookBox(props) {
     function viewClickevent(){
@@ -16,8 +17,10 @@ function BookBox(props) {
         <>
             <div className="item" id="item1">
                 <div className="book_img">
+                <object data={"http://libgen.gs/covers/" + props.dataObj.coverurl}  type="image/jpg">
+                    <img src={default_img}/>
+                </object>
 
-                    <img src={"http://libgen.gs/covers/" + props.dataObj.coverurl} alt="" />
                 </div>
                 <div className="book_detail">
                     <div className="all_details">

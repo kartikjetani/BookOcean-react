@@ -1,0 +1,38 @@
+/* main css */
+/* donatebook css start */
+#donatebook h3{
+    text-align: center;
+    font-size: 40px;
+    margin: 30px;
+    text-decoration: underline;
+}
+#donatebook_form{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#iframe{
+    width: 750px;
+    /* height: 500px; */
+}
+
+/* donatebook css end */
+
+/* tab css */
+/* donatebook css start */
+#donatebook h3{
+    font-size: 35px;
+    margin: 15px;
+}
+/* donatebook css end */
+
+/* phone css */
+ /* donatebook css start */
+#donatebook h3{
+    font-size: 25px;
+    margin: 20px;
+}
+#iframe{
+    height: 620px;
+}
+/* donatebook css end */

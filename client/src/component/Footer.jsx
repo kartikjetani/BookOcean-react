@@ -13,6 +13,8 @@ function Footer() {
                 <ul>
                     <li className="footer_list1" id="footer1"><a href="/">Home</a> </li>
                     <li className="footer_list1" id="footer2"><Link to="/categories"> Categories</Link> </li>
+                    <li className="footer_list1" id="footer2"><Link to="/upload"> Upload Book</Link> </li>
+                    <li className="footer_list1" id="footer2"><Link to="/request"> Request Book</Link> </li>
                     <li className="footer_list1" id="footer3"><a href="mailto:contact.bookocean@gmail.com">Contact</a></li>
                 </ul>
                 {/* style={{alignItems:'center',display:'flex',justifyContent:'center',paddingBottom:'25px'}} */}

@@ -27,7 +27,7 @@ const [redirect,setRedirect]=useState(null)
         </div>
         <div id="categories-container">
             <select onChange={catChangeEvent} name="" id="cstegory1" className="category">
-            <option value="" disabled selected disabled selected >Technology</option>
+            <option value="" disabled selected >Technology</option>
             <option value="topicid210" > Technology - All</option>
             <option value="topicid212">Aerospace Equipment</option>
                 <option value="topicid211">Automation</option>

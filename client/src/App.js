@@ -10,6 +10,7 @@ import ViewBook from './component/ViewBook';
 import  store  from './store';
 import ReactGa from 'react-ga';
 import Categories from './component/Categories';
+import UploadBook from './component/UploadBook';
 
 function App() {
 
@@ -26,13 +27,16 @@ function App() {
 
   <Header  />
  
+  
+
+  <Route exact path="/" >
   <Explore />
-
-  <Route exact path="/" component={PopularListing}/>
-
-  <Route path="/categories" component={Categories} >
-
-  </Route>
+  <PopularListing/>
+    </Route>
+  <Route path="/upload" component={UploadBook}/>
+  <Route path="/request" component={UploadBook}/>
+  <Route path="/download2/:md5" component={UploadBook}/>
+  <Route path="/categories" component={Categories} />
   
   <Route path="/search" component={CommonListing}/>
   <Route path="/view/:md5" component={ViewBook}/>

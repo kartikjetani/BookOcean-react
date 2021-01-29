@@ -314,10 +314,11 @@ body{
 .book_img{
     margin-right: 10px;
 }
-.book_img img{
+.book_img img,.book_img object{
     height: 260px;
     width: 170px;
 }
+
 .book_detail{
     display: flex;
     flex-direction: column;
@@ -468,6 +469,7 @@ body{
     font-weight: 550;
     margin-left: 10px;
     font-size: 20px;
+    word-break: break-word;
 }
 .all_detail_details button{
     color: white;
@@ -500,6 +502,11 @@ body{
     height: 420px;
     width: 250px;
 }
+.all_book_detail_book_img object{
+    height: 100%;
+    width: 100%;
+}
+
 .all_book_detail_book_img img{
     height: 100%;
     width: 100%;
@@ -551,6 +558,7 @@ body{
 }
 #mail{
     padding-left: 24px;
+    padding-top: 12px;
 }
 .sidepanel {
     height: -webkit-fill-available; /* Specify a height */
@@ -610,6 +618,9 @@ body{
 /* burger menu css end */
 /* css for ipad */
 @media only screen and (min-width: 769px) and (max-width: 1140px) {
+    #right {
+        right: 20px;
+    }
     #outer_column{
         flex-direction: column;
     }
@@ -634,6 +645,17 @@ body{
         width: 360px;
     }
 }
+
+@media only screen and (min-width: 769px) and (max-width: 930px) {
+    #right ul li a {
+        margin: 0px 10px;
+        padding: 7px 0px;
+    }
+    #footer_list ul li a {
+        padding: 0px;
+    }
+}
+
 @media only screen and (min-width: 740px) and (max-width: 768px) 
 {
     .all_book_details {
@@ -712,7 +734,7 @@ body{
     font-size: 16px;    
     padding: 8px 9px;
 }
-.book_img img{
+.book_img img,.book_img object{
     height: 240px;
     width: 160px;
 }
@@ -854,7 +876,7 @@ body{
         font-size: 16px;    
         padding: 8px 9px;
     }
-    .book_img img{
+    .book_img img,.book_img object{
         height: 260px;
         width: 144px;
     }
