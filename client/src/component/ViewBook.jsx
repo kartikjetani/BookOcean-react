@@ -13,7 +13,8 @@ function ViewBook() {
 
     useEffect(() => {
 
-        fetch('http://3.20.8.168:5000/searchbymd5/' + md5)
+        // 3.20.8.168
+        fetch('http://bookocean.ml:5000/searchbymd5/' + md5)
             .then(res => res.json())
             .then(data => { setDetails(data[0]) })
 
@@ -30,6 +31,23 @@ function ViewBook() {
         ReactGa.event({
             category: "Button",
             action: "Download-2 Button Clicked"
+        })
+    }
+
+    function shareLink() {
+        var dummy = document.createElement("textarea");
+        document.body.appendChild(dummy);
+        dummy.value = "http://bookocean.ml/view/" + md5;
+        dummy.select();
+        document.execCommand("copy");
+        document.body.removeChild(dummy);
+
+        var tooltip = document.getElementById("myTooltip");
+        tooltip.innerHTML = "Link Copied!";
+
+        ReactGa.event({
+            category: "Button",
+            action: "Share Button Clicked"
         })
     }
 
@@ -56,7 +74,7 @@ function ViewBook() {
 
                         {/* <!--details of column 1 start--> */}
                         <div id="outer_column">
-                            <div id="column_2" className="all_book_details">
+                            <div id="column-1" className="all_book_details">
                                 <div className="all_detail_details">
                                     <h4 className="all_book_details_title">
                                         Title :
@@ -177,36 +195,76 @@ function ViewBook() {
                                     </h4>
                                 </div>
 
-                                <div className="all_detail_details">
-                                    {/* <!--download button is here--> */}
-                                    <a href={"http://111.90.145.72/get.php?md5=" + details.md5 + "&mirr=1"}>
-                                        <button id="download-1" onClick={download_1}>
 
-                                            Download
-                                <img src={download_svg} alt="" />
-                                        </button>
-                                    </a>
-                                </div>
+
+
+
                                 <div className="all_detail_details">
-                                    {/* <!--download button is here--> */}
-                                    {/* <a  href={"http://library.lol/main/" + details.md5} target="_blank"> */}
-                                    <Link to={"/download2/" + details.md5}>
-                                        <button id="download-2" onClick={download_2}>
-                                            Download
-                                <img src={download_svg} alt="" />
-                                        </button>
-                                    </Link>
-                                    {/* </a> */}
-                                </div>
+                            {/* <!--download button is here--> */}
+                            <Link to={"/preview/"+details.md5}>
+                            <button id="share">
+                                <i className="fa fa-eye"></i>
+                                Preview
+                            </button>
+                            </Link>
+                        </div>
+
+                        <div className="all_detail_details">
+                            {/* <!--download button is here--> */}
+                            <div className="tooltip">
+
+                            <span className="tooltiptext" id="myTooltip">Click to Copy URL</span>
+
+                            <button id="share" onClick={shareLink}>
+                                <i className="fa fa-share"></i>                          
+                                Share
+
+                            </button>
                             </div>
 
-                            {/* <!--details of column 2 end--> */}
+                        </div>
+
+
+
+
+{/* 
+                                <div className="all_detail_details">
+                                    {/* <!--Share button is here--> 
+                                      <button id="share" >
+                                        <img src={sharesvg} alt=""/>
+                                            Share
+                                       </button>
+                                  </div> */}
+
+                                    <div className="all_detail_details">
+                                        {/* <!--download button is here--> */}
+                                        <a href={details.download1}>
+                                            <button id="download-1" onClick={download_1}>
+
+                                                Download
+                                             <img src={download_svg} alt="" />
+                                            </button>
+                                        </a>
+                                    </div>
+                                    <div className="all_detail_details">
+                                        {/* <!--download button is here--> */}
+                                        <Link to={"/download2/" + details.md5}>
+                                            <button id="download-2" onClick={download_2}>
+                                                Download
+                                            <img src={download_svg} alt="" />
+                                            </button>
+                                        </Link>
+                                        {/* <Link to={"/preview/"+details.md5}><button>Preview</button></Link> */}
+                                    </div>
+                                </div>
+
+                                {/* <!--details of column 2 end--> */}
+                            </div>
                         </div>
                     </div>
-                </div>
             </section>
 
-            {/* <!--book view result page end--> */}
+                {/* <!--book view result page end--> */}
         </>
         )
     }

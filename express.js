@@ -1,18 +1,21 @@
 const express = require('express')
 const app = express()
-// const path = require('path');
+const path = require('path');
 const cors = require('cors');
 const port = 5000
 const libgen = require('libgen');
 
 app.use(cors({
-  origin:['http://localhost:3000','http://bookocean.epizy.com/']
+  origin:['http://localhost:3000','http://localhost:5000','http://bookocean.epizy.com/']
 }));
 
-// app.use(express.static(path.join(__dirname,"client","build")))
 
+app.use(express.static(path.join(__dirname, 'client/build')));
 
-// app.use('/static', express.static('public'))
+app.get('/*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
 app.get('/auto/:bookname', async function (req, res) {
     const options = {
         mirror: 'http://libgen.is', 
@@ -86,12 +89,7 @@ app.get('/publisher/:publisher',async(req,res)=>{
   res.send(data)
 })
 
-app.get('/', (req, res) => {
-  res.send("Hello World!");
-})
-app.get('*',(req,res)=>{
-  res.redirect('http://localhost:5000')
-})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })

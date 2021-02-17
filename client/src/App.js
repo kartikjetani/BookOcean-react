@@ -10,7 +10,9 @@ import ViewBook from './component/ViewBook';
 import  store  from './store';
 import ReactGa from 'react-ga';
 import Categories from './component/Categories';
-import UploadBook from './component/UploadBook';
+import UploadBook from './component/All_iframe';
+import Engineering from './component/Engineering';
+import GTU from './component/GTU';
 
 function App() {
 
@@ -36,10 +38,14 @@ function App() {
   <Route path="/upload" component={UploadBook}/>
   <Route path="/request" component={UploadBook}/>
   <Route path="/download2/:md5" component={UploadBook}/>
+  <Route path="/preview/:md5" component={UploadBook}/>
+  
   <Route path="/categories" component={Categories} />
   
   <Route path="/search" component={CommonListing}/>
   <Route path="/view/:md5" component={ViewBook}/>
+  <Route path="/engineering" component={Engineering}/>
+  <Route path="/gtu/:subcode" component={GTU}/>
 
 
   <Footer/>

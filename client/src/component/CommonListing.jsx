@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { BookBox } from "./PopularListing";
 import Pagination from "./Pagination";
@@ -11,7 +11,8 @@ const useFetch = (query,option) => {
     useEffect(async() => {
         setLoading(true)
         // 3.20.8.168:5000
-        await fetch("http://3.20.8.168:5000/"+option+"/" + query)
+        try{
+            await fetch("http://bookocean.ml:5000/"+option+"/" + query)
             .then(res => res.json())
             .then(data => {
                 if (Object.keys(data).length !== 0) {
@@ -19,6 +20,8 @@ const useFetch = (query,option) => {
                 }else{setData(null)}
             })
         setLoading(false);
+    }catch(e){}
+
         
     }, [query,option])
     return { data, loading };  
@@ -47,7 +50,7 @@ function CommonListing(props) {
         } else if (data) {
           return (props.query.substring(0,7)==="topicid")?
              `${data.length} Results for category`:
-             `${data.length} Results for ${props.query && decodeURIComponent(props.query.substring(0, 10))}...`
+             `${data.length} Results for ${props.query && decodeURIComponent(props.query).substring(0,10)}...`
         } else {
             return "No result found"
         }

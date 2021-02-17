@@ -13,14 +13,16 @@ function BookBox(props) {
         })
     }
 
-    return (
+ return (
         <>
             <div className="item" id="item1">
                 <div className="book_img">
-                <object data={"http://libgen.gs/covers/" + props.dataObj.coverurl}  type="image/jpg">
+           
+                 <object 
+                 data={"http://libgen.gs/covers/" + props.dataObj.coverurl} 
+                 type="image/jpg">
                     <img src={default_img}/>
                 </object>
-
                 </div>
                 <div className="book_detail">
                     <div className="all_details">

@@ -389,25 +389,46 @@ body{
 #footer_nm h2{
     margin: 50px;
 }
-#footer_list ul{
+.footer_list_cont{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 25px;
 }
-#footer_list ul li{
-    margin: 10px 10px 80px 10px;
-    padding: 10px;
+.footer_list{
+    width: 380px;
+}
+#footer_list1{
+    display: flex;
+    flex-direction: column;
+}
+#footer_list1 ul li{
+    width: 150px;
+    padding: 7px 0px;
     list-style: none;
+
 }
-#footer_list ul li a{
-    font-size: 25px;
+#footer_list1 ul li a{
+    font-size: 20px;
     color: black;
     border-radius: 50px;
-    padding: 7px 13px;
+    padding: 8px;
     text-decoration: none;
 }
-#footer_list ul li a:hover{
+
+#footer_list1 ul li a:hover{
     background-color: white;
+}
+
+#footer_list1 h5{
+    font-size: 20px;
+    padding: 13px 0px;
+    text-decoration: underline;
+}
+#footer_list2 h5{
+    font-size: 20px;
+    padding: 13px 0px 20px 0px;
+    text-decoration: underline;
 }
 /* footer css end */
 
@@ -471,7 +492,7 @@ body{
     font-size: 20px;
     word-break: break-word;
 }
-.all_detail_details button{
+.all_detail_details #download-1,#download-2{
     color: white;
     background-color: #0F65CA;
     display: flex;
@@ -482,6 +503,60 @@ body{
     border: none;
     cursor: pointer;
 }
+.all_detail_details #share{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 10px 18px;
+    border: 2px solid #0f65ca;
+    cursor: pointer;
+} 
+#share i{
+    margin-top: 1px;
+    margin-right: 5px;
+}
+
+/* Share tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
 .all_detail_details button:hover{
     box-shadow: 0px 3px 5px 1px rgba(15, 102, 202, 0.849);
     transition-duration: 0.5s;
@@ -738,8 +813,14 @@ body{
     height: 240px;
     width: 160px;
 }
+
 #footer_nm h2 {
     margin: 35px;
+}
+.footer_list_cont{
+    margin-left: 25px;
+    margin-right: 10px;
+    justify-content: left;
 }
 #footer_list ul{
     flex-direction: column;
@@ -747,20 +828,18 @@ body{
 #footer_list ul li{
     margin-bottom: 10px;
 }
-.footer_list1{
+#footer_list1{
     display: flex;
     justify-content: center;
 }
-#footer_list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#footer_list1 ul{
+    margin: 0px;
 }
 #column-2{
     margin-top: 0px;
 }
 #column-1{
-    margin-top: 0;
+    margin-bottom: 0px;
 }
 
 #outer_column{
@@ -880,26 +959,18 @@ body{
         height: 260px;
         width: 144px;
     }
-    #footer_nm h2 {
-        margin: 15px;
-        font-size: 28px;
-    }
-    #footer_list ul{
-        flex-direction: column;
-    }
-    #footer_list ul li{
-        margin: 5px;
-        padding: 3px;
-    }
-    .footer_list1{
-        display: flex;
-        justify-content: center;
-    }
-    #footer_list{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
+
+#footer_nm h2 {
+    margin: 35px;
+}
+
+.footer_list_cont{
+    margin-left: 20px;
+    margin-right: 10px;
+    justify-content: left;
+}
+
     .all_book_detail_cont_title h2 {
         font-size: 2.2rem;
     }

@@ -7,15 +7,15 @@ function Explore() {
     return (
         <section id="section1">
             <div id="book1" className="books1">
-               <a href="/comingsoon.html">
+               <Link to="/engineering">
                     <div className="section1">
                         <img src={book_svg} alt="" />
                         <h3>
-                            Educational
+                           Engineering
                         </h3>
                     </div>
                     <p> Select book by Subject</p>
-                    </a>
+                   </Link>
             </div>
             <div id="book2" className="books1">
                <Link to="/categories">

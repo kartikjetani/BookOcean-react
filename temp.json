@@ -1,252 +1,82 @@
-[
-  {
-    "title": "Advanced Memory Optimization Techniques for Low Power Embedded Processors",
-    "author": "Manish Verma, Peter Marwedel",
-    "md5": "17f31e7c729f6ef7b4abcb9ef6e5329e"
-  },
-  {
-    "title": "Content Distribution Networks: An Engineering Approach",
-    "author": "Verma D. C.",
-    "md5": "2ceea16c15b7315c5f72612a1841760a"
-  },
-  {
-    "title": "Advances in Genome Biology, Vol. 4: Genetics of Sex Determination",
-    "author": "Ram S. Verma (ed.)",
-    "md5": "c0102f5016dd01c8f33ca8c16d36938f"
-  },
-  {
-    "title": "Atomic and Nuclear Analytical Methods: XRF, Mуssbauer, XPS, NAA and Ion-Beam Spectroscopic Techniques",
-    "author": "Hem Raj Verma",
-    "md5": "e3c66ca6a5fcaa9f914357d86ec40a82"
-  },
-  {
-    "title": "Fascinating Insects: Some Aspects of Insect Life",
-    "author": "Pierre Jolivet, Krishna K. Verma",
-    "md5": "477d39dd205df4fdc581fba309c34893"
-  },
-  {
-    "title": "Principles of Computer Systems and Network Management",
-    "author": "Dinesh Chandra Verma (auth.)",
-    "md5": "e2a09cb3b7e0348ba760eccb9a995702"
-  },
-  {
-    "title": "Civil War Gettysburg 1863 Gamble For Victory",
-    "author": "Dan Abnett, Dheeraj Verma",
-    "md5": "55a4d8c879eecd753afb0fbc29291b11"
-  },
-  {
-    "title": "The War is On!: Battle of First Bull Run",
-    "author": "Larry Hama, Dheeraj Verma",
-    "md5": "ac613d9fb6475c6a0b95320a2d1a5829"
-  },
-  {
-    "title": "Nuclear Transfer Protocols: Cell Reprogramming and Transgenesis",
-    "author": "Marie A. Di Berardino (auth.), Paul J. Verma, Alan O. Trounson (eds.)",
-    "md5": "861553945fb75483e9a5a0a62e8323f4"
-  },
-  {
-    "title": "Cancer Epidemiology",
-    "author": "Ahmedin Jemal, Melissa M. Center, Elizabeth Ward, Michael J. Thun (auth.), Mukesh Verma PhD (eds.)",
-    "md5": "2fc0e098f130c0bf670badbfab60b1c8"
-  },
-  {
-    "title": "Cancer Epidemiology: Modifiable Factors",
-    "author": "Irene Brüske-Hohlfeld (auth.), Mukesh Verma PhD (eds.)",
-    "md5": "34de0737f750488870b5b8822c40c4ca"
-  },
-  {
-    "title": "Nuclear Transfer Protocols: Cell Reprogramming and Transgenesis",
-    "author": "Marie A. Di Berardino (auth.), Paul J. Verma, Alan O. Trounson (eds.)",
-    "md5": "348c4aef59269ccff36b37a939d837fb"
-  },
-  {
-    "title": "Cell Division Control in Plants",
-    "author": "François-Yves Bouget, Mickael Moulager, Florence Corellou (auth.), Desh Pal S. Verma, Zonglie Hong (eds.)",
-    "md5": "66b3085f2a5e92c3f4d19148bd539e7e"
-  },
-  {
-    "title": "The Mystery of The Tunguska Fireball",
-    "author": "Surendra Verma",
-    "md5": "55e9d3dfa8065e08c928ebc516aaaa65"
-  },
-  {
-    "title": "Cancer Epidemiology",
-    "author": "Ahmedin Jemal, Melissa M. Center, Elizabeth Ward, Michael J. Thun (auth.), Mukesh Verma PhD (eds.)",
-    "md5": "c9765de021effe357f36a73918e6c488"
-  },
-  {
-    "title": "The ammonoid fauna of the Kimmeridgian-Tithonian boundary beds of Mombasa, Kenya",
-    "author": "Harish M. Verma",
-    "md5": "e8e0af587f21225a6fa3f82856abd1fc"
-  },
-  {
-    "title": "Cancer Epidemiology: Modifiable Factors",
-    "author": "Irene Brüske-Hohlfeld (auth.), Mukesh Verma PhD (eds.)",
-    "md5": "fb0e32732ebdfba53c3d3bfd5f9075b6"
-  },
-  {
-    "title": "The Tunguska Fireball: Solving One of the Great Mysteries of the 20th Century",
-    "author": "Surendra Verma",
-    "md5": "5f3ed7557f286a21a0c2385564ad3017"
-  },
-  {
-    "title": "Bio-Inspired Computing and Communication: First Workshop on Bio-Inspired Design of Networks, BIOWIRE 2007 Cambridge, UK, April 2-5, 2007 Revised Selected Papers",
-    "author": "Jon Crowcroft (auth.), Pietro Liò, Eiko Yoneki, Jon Crowcroft, Dinesh C. Verma (eds.)",
-    "md5": "93724bf13de7409d1039034b00438ef4"
-  },
-  {
-    "title": "Service-Oriented Computing - ICSOC 2005: Third International Conference, Amsterdam, The Netherlands, December 12-15, 2005. Proceedings",
-    "author": "Kunal Verma, Amit P. Sheth (auth.), Boualem Benatallah, Fabio Casati, Paolo Traverso (eds.)",
-    "md5": "a90ef438586da83dcbbd66e32775f5e4"
-  },
-  {
-    "title": "5 Steps to a 5 500 AP English Literature Questions to Know By Test Day ",
-    "author": "Shveta Verma Miller, Thomas A. - editor Evangelist",
-    "md5": "a12c62759baf085eb0911df5945cc21a"
-  },
-  {
-    "title": "Atomic and Nuclear Analytical Methods: XRF, Mössbauer, XPS, NAA and Ion-Beam Spectroscopic Techniques",
-    "author": "Hem Raj Verma",
-    "md5": "4a1e5cb629ef5243c812decd86b446a6"
-  },
-  {
-    "title": "Pattern Recognition Technologies and Applications: Recent Advances ",
-    "author": "Brijesh Verma, Brijesh Verma, Michael Blumenstein",
-    "md5": "4adb472922590ba0885bf5c03aa3e014"
-  },
-  {
-    "title": "Genetics of Human Neoplasia",
-    "author": "Ram S. Verma (Eds.)",
-    "md5": "4b3bc991764c7574343fb94f56d26be9"
-  },
-  {
-    "title": "Cross Curricular Contexts, Themes And Dimensions In Primary Schools ",
-    "author": "Gajendra K. Verma",
-    "md5": "4c834799fb36efc82cd048b6d83871b0"
-  },
-  {
-    "title": "Managing the Project Team",
-    "author": "Vijay K. Verma",
-    "md5": "84b07d5178dbb4a604de6f266c31e3a3"
-  },
-  {
-    "title": "Legitimate Applications of Peer-to-Peer Networks",
-    "author": "Dinesh C. Verma",
-    "md5": "81b58ef8d059fc5935ed09d0929ad2a6"
-  },
-  {
-    "title": "Mood Disorders in Later Life, Second Edition (Medical Psychiatry Series)",
-    "author": "James M. Ellison, Helen H. Kyomen, Sumer Verma",
-    "md5": "75e3c5981a17ca5b166ffa05821b2ad1"
-  },
-  {
-    "title": "Genes and Genomes, Part A",
-    "author": "R.S. Verma",
-    "md5": "690b625f167e474824de63b63b23ec19"
-  },
-  {
-    "title": "International Perspectives on Diversity and Inclusive Education",
-    "author": "Verma Bagley Jh",
-    "md5": "eb9622efebe95f22c9dd662bb81872e5"
-  },
-  {
-    "title": "Workforce Wake-Up Call: Your Workforce is Changing, Are You",
-    "author": "Robert Gandossy, Nidhi Verma, Elissa Tucker",
-    "md5": "e1b2086ef628299a3cb130135a13ee6a"
-  },
-  {
-    "title": "Branding Demystified: Plans to Payoffs (Response Books)",
-    "author": "Harsh V. Verma",
-    "md5": "d3354d3cd75663b20787339ff8b3212d"
-  },
-  {
-    "title": "Fascinating Insects: Some Aspects of Insect Life",
-    "author": "P. Jolivet, K.K. Verma",
-    "md5": "c6d43216885431e0510a8d49a6000f76"
-  },
-  {
-    "title": "Employment Relations in the Growing Asian Economies (Routledge Advances in Asia-Pacific Business)",
-    "author": "Anil Verma",
-    "md5": "c6da9ba09abc547f98196e1a7b95b5c4"
-  },
-  {
-    "title": "Institutions and Planning (Current Research in Urban and Regional Studies)",
-    "author": "Niraj Verma",
-    "md5": "c17aa3136b3a8400d2e2a6d6b386a31e"
-  },
-  {
-    "title": "Know All About Manners & Etiquettes: a Comprehensive Guide on the Subject",
-    "author": "Verma, Ram Partap.",
-    "md5": "b960c76c217c51de3e90e16383de588e"
-  },
-  {
-    "title": "Beyond the Biophysical: Knowledge, Culture, and Politics in Agriculture and Natural Resource Management",
-    "author": "Laura German, Ritu Verma, Joshua J. Ramisch (auth.), Laura A. German, Joshua J. Ramisch, Ritu Verma (eds.)",
-    "md5": "b024248e6091cdbdb42b7071e0ca8b31"
-  },
-  {
-    "title": "Voice over IP Networks: Quality of Service, Pricing and Security",
-    "author": "Pramode K. Verma, Ling Wang (auth.)",
-    "md5": "a6d066ed1c387c88ac94e6c26240f903"
-  },
-  {
-    "title": "Advanced Memory Optimization Techniques for Low-Power Embedded Processors",
-    "author": "Manish Verma, Peter Marwedel",
-    "md5": "a31c98cb789aca4b6c9976dfcf9f5d8a"
-  },
-  {
-    "title": "Unions in the 21st Century: An International Perspective",
-    "author": "Anil Verma, Thomas Kochan",
-    "md5": "8b47aa743f783bf0d76a5291cdefa3e1"
-  },
-  {
-    "title": "Managing the Project Team",
-    "author": "Vijay K. Verma",
-    "md5": "8a6f256b0f15b4d669afac10624e3398"
-  },
-  {
-    "title": "Human Resource Skills for the Project Manager: The Human Aspects of Project Management,  Volume 2",
-    "author": "Vijay K. Verma",
-    "md5": "327c8e3421ef7de3669b13628ac9c2a7"
-  },
-  {
-    "title": "Voice over IP Networks: Quality of Service, Pricing and Security",
-    "author": "Pramode K. Verma, Ling Wang (auth.)",
-    "md5": "1b57dd994220a42e616598875294e2fa"
-  },
-  {
-    "title": "Cell Division Control in Plants",
-    "author": "François-Yves Bouget, Mickael Moulager, Florence Corellou (auth.), Desh Pal S. Verma, Zonglie Hong (eds.)",
-    "md5": "156f222f8da6e61d2e217cf2b765b8bb"
-  },
-  {
-    "title": "Policy Technologies for Self-Managing Systems",
-    "author": "Dakshi Agrawal, Seraphin Calo, Kang-won Lee, Jorge Lobo, Dinesh Verma",
-    "md5": "1441412bcff659f6d82b53847d3f58ea"
-  },
-  {
-    "title": "Depression in Later Life: A Multidisciplinary Psychiatric Approach (Medical Psychiatry)",
-    "author": "James E. Ellison, Sumer K. Verma",
-    "md5": "0f36ea62515a8b0dfb6b229b7b4eca8d"
-  },
-  {
-    "title": "Cell Division Control in Plants",
-    "author": "François-Yves Bouget, Mickael Moulager, Florence Corellou (auth.), Desh Pal S. Verma, Zonglie Hong (eds.)",
-    "md5": "0a8b481bbd8a38c9d5b4923d2b7c0518"
-  },
-  {
-    "title": "Medical Image Computing and Computer-Assisted Intervention – MICCAI 2008: 11th International Conference, New York, NY, USA, September 6-10, 2008, Proceedings, Part I",
-    "author": "Luke Bloy, Ragini Verma (auth.), Dimitris Metaxas, Leon Axel, Gabor Fichtinger, Gábor Székely (eds.)",
-    "md5": "78919e201ccfe1dfd063846785b49bef"
-  },
-  {
-    "title": "Gender, Land, and Livelihoods in East Africa",
-    "author": "Ritu Verma",
-    "md5": "5dacc738582b1595858a3b1c4ba1380d"
-  },
-  {
-    "title": "Similarities, Connections, and Systems: The Search for a New Rationality for Planning and Management",
-    "author": "Niraj Verma",
-    "md5": "52fd6a148a40531e56458eb3429fedf5"
-  }
-]
+
+{
+  "3110003": [
+    {
+      "id": "2929167"
+    },
+    {
+      "id": "2512077"
+    },
+    {
+      "id": "2930115"
+    }
+  ],
+  "3110005": [
+    {
+      "id": "2929170"
+    },
+    {
+      "id": "2391059"
+    },
+    {
+      "id": "2929177"
+    },
+    {
+      "id": "2929732"
+    },
+    {
+      "id": "2929733"
+    }
+  ],
+  "3110006": [
+    {
+      "id": "2929166"
+    },
+    {
+      "id": "2498914"
+    },
+    {
+      "id": "2929735"
+    },
+    {
+      "id": "2929736"
+    }
+  ],
+  "3110007": [],
+  "3110011": [],
+  "3110013": [],
+  "3110014": [
+    {
+      "id": "2522529"
+    },
+    {
+      "id": "2143334"
+    },
+    {
+      "id": "6563"
+    }
+  ],
+  "3110015": [],
+  "3110016": [
+    {
+      "id": "2929729"
+    },
+    {
+      "id": "810452"
+    }
+  ],
+  "3110018": [
+    {
+      "id": "2510258"
+    },
+    {
+      "id": "2499793"
+    },
+    {
+      "id": "2523380"
+    },
+    {
+      "id": "2510257"
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 function Footer() {
     return (
@@ -9,16 +8,28 @@ function Footer() {
                     Book Ocean
             </h2>
             </div>
-            <div id="footer_list">
+            <div class="footer_list_cont">
+            <div class="footer_list" id="footer_list1">
+                
+                <h5>Quick Links</h5> 
                 <ul>
-                    <li className="footer_list1" id="footer1"><a href="/">Home</a> </li>
-                    <li className="footer_list1" id="footer2"><Link to="/categories"> Categories</Link> </li>
-                    <li className="footer_list1" id="footer2"><Link to="/upload"> Upload Book</Link> </li>
-                    <li className="footer_list1" id="footer2"><Link to="/request"> Request Book</Link> </li>
-                    <li className="footer_list1" id="footer3"><a href="mailto:contact.bookocean@gmail.com">Contact</a></li>
+                    <li class="footer_list1" id="footer1"><a href="/">Home</a> </li>
+                    <li class="footer_list1" id="footer2"><a href="/categories"> Categories</a> </li>
+                    <li class="footer_list1" id="footer2"><a href="/upload"> Upload Book</a> </li>
+                    <li class="footer_list1" id="footer2"><a href="/request"> Request Book</a> </li>
+                    <li class="footer_list1" id="footer3"><a href="mailto:contact.bookocean@gmail.com">Contact</a></li>
                 </ul>
-                {/* style={{alignItems:'center',display:'flex',justifyContent:'center',paddingBottom:'25px'}} */}
             </div>
+            <div class="footer_list" id="footer_list2">
+                <h5>
+                    About us
+                </h5>
+                <p>
+                    Book Ocean is India`s biggest online free digital Library. We have free 2.4M+ non-fiction and 2.2M+ fiction books for every bookish people. On this Library you can find free e-books in various format like pdf, epub, DjVu, Rtf, TXT, Mobi. All free books are devided into 23 categories and 296 sub-categories. Here you can search and download books without any limits. You can get preview of any book and read it on Book Ocean.
+                </p>
+            </div>
+        </div>
+          
             <div>
                 <h4>
                     Made with ❤️ in India
